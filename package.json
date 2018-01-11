@@ -26,12 +26,6 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@angular/core": "^4.0.0",
-    "@types/node": "~6.0.60",
-    "rxjs": "^5.1.0",
-    "ts-node": "~2.0.0",
-    "typescript": "2.1.5",
-    "zone.js": "^0.8.12"
   },
   "false": {},
   "bugs": {
