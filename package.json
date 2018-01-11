@@ -1,11 +1,11 @@
 {
   "name": "angular-4-data-table",
   "version": "0.2.003",
-  "description": "An Angular 4 data table, with pagination, sorting, expandable rows etc.",
+  "description": "An Angular 5 data table, with pagination, sorting, expandable rows etc.",
   "keywords": [
     "angular",
-    "angular4",
-    "Angular 4",
+    "angular5",
+    "Angular 5",
     "ng2",
     "datatable",
     "data-table",
@@ -26,12 +26,15 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@angular/core": "^4.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
     "@types/node": "~6.0.60",
-    "rxjs": "^5.1.0",
-    "ts-node": "~2.0.0",
-    "typescript": "2.1.5",
-    "zone.js": "^0.8.12"
+    "rxjs": "^5.5.2",
+    "ts-node": "~3.2.0",
+    "typescript": "~2.4.2",
+    "zone.js": "^0.8.14"
   },
   "false": {},
   "bugs": {
