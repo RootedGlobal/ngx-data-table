@@ -2,7 +2,7 @@
 
 It is fork of this package [https://github.com/MIt9/angular-4-data-table] (https://github.com/MIt9/angular-4-data-table)
 
-A simple Angular 4 data table, with built-in solutions for features including:
+A simple Angular 5 data table, with built-in solutions for features including:
 
 * pagination
 * sorting
@@ -20,18 +20,18 @@ Check out the [demo](https://ggmod.github.io/angular-2-data-table-demo) and its 
 Demo for pagination with seperate page numbers will be added soon
 
 ## Installing:
-`npm install faisal-iqbal/angular-4-data-table --save`
+`npm install khalid-folio3/angular-5-data-table#ng5-compiled --save`
 
 ## Prodaction (Minification)
 Some times can be some problam with it. to fix it
 use import like this
 
-`import { DataTableModule } from 'angular-4-data-table/src/index';`
+`import { DataTableModule } from 'angular-4-data-table/ng5/index';`
 
 add in .angular-cli.json
 
 `"scripts": [
-        "../node_modules/angular-4-data-table/dist/index.js"
+        "../node_modules/angular-4-data-table/ng5/index.js"
 ],`
 
 and for prodaction build use
