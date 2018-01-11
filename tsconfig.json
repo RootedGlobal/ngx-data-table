@@ -10,7 +10,7 @@
     "noEmitOnError": true,
     "noImplicitAny": false,
     "preserveConstEnums": true,
-    "outDir": "dist/",
+    "outDir": "ng5/",
     "rootDir": "src/",
     "types" : ["node"],
     "sourceMap": true,
