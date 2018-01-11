@@ -1,4 +1,4 @@
-## Angular 4 Data Table
+## Angular 5 Data Table Compiled Version
 
 It is fork of this package [https://github.com/MIt9/angular-4-data-table] (https://github.com/MIt9/angular-4-data-table)
 
@@ -20,7 +20,7 @@ Check out the [demo](https://ggmod.github.io/angular-2-data-table-demo) and its 
 Demo for pagination with seperate page numbers will be added soon
 
 ## Installing:
-`npm install khalid-folio3/angular-5-data-table#ng5-compiled --save`
+`npm install khalid-folio3/angular-4-data-table#ng5-compiled --save`
 
 ## Prodaction (Minification)
 Some times can be some problam with it. to fix it
