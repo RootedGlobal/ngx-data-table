@@ -30,6 +30,9 @@ export declare class DataTable implements DataTableParams, OnInit {
     selectOnRowClick: boolean;
     autoReload: boolean;
     showReloading: boolean;
+    columnSortableIcon: string;
+    columnSortableTopIcon: string;
+    columnSortableBottomIcon: string;
     indexColumnVisible: boolean;
     selectColumnVisible: boolean;
     expandColumnVisible: boolean;

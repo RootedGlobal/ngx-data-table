@@ -10,7 +10,7 @@
     "noEmitOnError": true,
     "noImplicitAny": false,
     "preserveConstEnums": true,
-    "outDir": "ng5/",
+    "outDir": "ng5-configurable-icons-compiled/",
     "rootDir": "src/",
     "types" : ["node"],
     "sourceMap": true,

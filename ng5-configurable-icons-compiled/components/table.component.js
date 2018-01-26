@@ -35,6 +35,9 @@ var DataTable = /** @class */ (function () {
         this.selectOnRowClick = false;
         this.autoReload = true;
         this.showReloading = false;
+        this.columnSortableIcon = 'glyphicon glyphicon-sort column-sortable-icon';
+        this.columnSortableTopIcon = 'glyphicon glyphicon-triangle-top';
+        this.columnSortableBottomIcon = 'glyphicon glyphicon-triangle-bottom';
         this._sortAsc = true;
         this._offset = 0;
         this._limit = 10;
@@ -419,6 +422,18 @@ var DataTable = /** @class */ (function () {
         core_1.Input(),
         __metadata("design:type", Object)
     ], DataTable.prototype, "showReloading", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Object)
+    ], DataTable.prototype, "columnSortableIcon", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Object)
+    ], DataTable.prototype, "columnSortableTopIcon", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Object)
+    ], DataTable.prototype, "columnSortableBottomIcon", void 0);
     __decorate([
         core_1.Input(),
         __metadata("design:type", Object),
