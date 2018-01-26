@@ -62,9 +62,9 @@ export class DataTable implements DataTableParams, OnInit {
     @Input() selectOnRowClick = false;
     @Input() autoReload = true;
     @Input() showReloading = false;
-    @Input() columnSortableIcon = 'glyphicon glyphicon-sort column-sortable-icon';
-    @Input() columnSortableTopIcon = 'glyphicon glyphicon-triangle-top';
-    @Input() columnSortableBottomIcon = 'glyphicon glyphicon-triangle-bottom';
+    @Input() columnSortableIcon = 'dnl-db-sort';
+    @Input() columnSortableTopIcon = 'dnl-db-sort-up';
+    @Input() columnSortableBottomIcon = 'dnl-db-sort-down';
 
     // UI state without input:
 
