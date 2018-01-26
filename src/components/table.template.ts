@@ -19,10 +19,10 @@ export const TABLE_TEMPLATE = `
                         <span *ngIf="!column.headerTemplate" [textContent]="column.header"></span>
                         <span *ngIf="column.headerTemplate" [ngTemplateOutlet]="column.headerTemplate" [ngTemplateOutletContext]="{column: column}"></span>
                         <span class="column-sort-icon" *ngIf="column.sortable">
-                            <span class="glyphicon glyphicon-sort column-sortable-icon" [hide]="column.property === sortBy"></span>
+                            <span class="columnSortableIcon" [hide]="column.property === sortBy"></span>
                             <span [hide]="column.property !== sortBy">
-                                <span class="glyphicon glyphicon-triangle-top" [hide]="sortAsc"></span>
-                                <span class="glyphicon glyphicon-triangle-bottom" [hide]="!sortAsc"></span>
+                                <span class="columnSortableTopIcon" [hide]="sortAsc"></span>
+                                <span class="columnSortableBottomIcon" [hide]="!sortAsc"></span>
                             </span>
                         </span>
                         <span *ngIf="column.resizable" class="column-resize-handle" (mousedown)="resizeColumnStart($event, column, th)"></span>
