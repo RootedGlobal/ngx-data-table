@@ -1,12 +1,15 @@
 {
-  "name": "angular-4-data-table",
+  "name": "ngx-data-table",
   "version": "0.4.6",
-  "description": "An Angular 4 data table, with pagination, sorting, expandable rows etc.",
+  "description": "An Angular v2+ data table, with pagination, sorting, expandable rows etc.",
   "keywords": [
+    "ngx",
+    "ng2",
     "angular",
     "angular4",
     "Angular 4",
-    "ng2",
+    "Angular8",
+    "Angular 8",
     "datatable",
     "data-table",
     "data table",
@@ -15,28 +18,30 @@
   "main": "src/index.ts",
   "typings": "src/index.ts",
   "scripts": {
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MIt9/angular-4-data-table.git"
+    "url": "git+https://github.com/narainsagar/ngx-data-table.git"
   },
   "author": "Dmitrii Bilukha <siniidrozd@gmail.com> (http://donsamogon.com)",
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
-    "@angular/core": "^4.0.0",
-    "@angular/common": "^4.0.1",
-    "@angular/forms": "^4.0.1",
-    "@angular/platform-browser": "^4.0.1",
-    "@types/node": "~6.0.60",
-    "rxjs": "^5.1.0",
-    "ts-node": "~2.0.0",
-    "typescript": "2.1.5",
-    "zone.js": "^0.8.12"
+    "@angular/core": "~8.2.9",
+    "@angular/common": "~8.2.9",
+    "@angular/forms": "~8.2.9",
+    "@angular/platform-browser": "~8.2.9",
+    "rxjs": "~6.4.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "~8.9.4",
+    "ts-node": "~7.0.0",
+    "typescript": "~3.5.3"
   },
   "false": {},
   "bugs": {
-    "url": "https://github.com/MIt9/angular-4-data-table/issues"
+    "url": "https://github.com/narainsagar/ngx-data-table/issues"
   },
-  "homepage": "https://github.com/MIt9/angular-4-data-table#readme"
+  "homepage": "https://github.com/narainsagar/ngx-data-table#readme"
 }

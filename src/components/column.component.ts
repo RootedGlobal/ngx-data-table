@@ -4,7 +4,7 @@ import { CellCallback } from '../types/cell-callback.type';
 
 
 @Directive({
-  selector: 'data-table-column'
+    selector: 'data-table-column'
 })
 export class DataTableColumn implements OnInit {
 
@@ -20,8 +20,8 @@ export class DataTableColumn implements OnInit {
     @Input() width: number | string;
     @Input() visible = true;
 
-    @ContentChild('dataTableCell') cellTemplate;
-    @ContentChild('dataTableHeader') headerTemplate;
+    @ContentChild('dataTableCell', { static: false }) cellTemplate;
+    @ContentChild('dataTableHeader', { static: false }) headerTemplate;
 
     getCellColor(row: DataTableRow, index: number) {
         if (this.cellColors !== undefined) {

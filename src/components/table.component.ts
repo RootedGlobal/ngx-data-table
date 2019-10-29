@@ -13,7 +13,7 @@ import { TABLE_TEMPLATE } from './table.template';
 import { TABLE_STYLE } from "./table.style";
 
 @Component({
-	moduleId: module.id +'',
+	moduleId: module.id + '',
 	selector: 'data-table',
 	template: TABLE_TEMPLATE,
 	styles: [TABLE_STYLE]
@@ -37,7 +37,7 @@ export class DataTable implements DataTableParams, OnInit {
 
 	@ContentChildren(DataTableColumn) columns: QueryList<DataTableColumn>;
 	@ViewChildren(DataTableRow) rows: QueryList<DataTableRow>;
-	@ContentChild('dataTableExpand') expandTemplate: TemplateRef<any>;
+	@ContentChild('dataTableExpand', { static: false }) expandTemplate: TemplateRef<any>;
 
 	// One-time optional bindings with default values:
 
@@ -360,7 +360,7 @@ export class DataTable implements DataTableParams, OnInit {
 		 that offsetWidth sometimes contains out-of-date values. */
 		if ((dx < 0 && (columnElement.offsetWidth + dx) <= this.resizeLimit) ||
 			!columnElement.nextElementSibling || // resizing doesn't make sense for the last visible column
-			(dx >= 0 && ((<HTMLElement> columnElement.nextElementSibling).offsetWidth + dx) <= this.resizeLimit)) {
+			(dx >= 0 && ((<HTMLElement>columnElement.nextElementSibling).offsetWidth + dx) <= this.resizeLimit)) {
 			return false;
 		}
 		return true;

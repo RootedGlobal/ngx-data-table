@@ -20,13 +20,13 @@ Check out the [demo](https://ggmod.github.io/angular-2-data-table-demo) and its 
 Demo for pagination with seperate page numbers will be added soon
 
 ## Installing:
-`npm install angular-4-data-table --save`
+`npm install ngx-data-table --save`
 
 ## Production (Minification)
 Some times this can cause problems.  
 To fix it use import like this
 
-`import { DataTableModule } from 'angular-4-data-table';`
+`import { DataTableModule } from 'ngx-data-table';`
 
 and for production build use
 
