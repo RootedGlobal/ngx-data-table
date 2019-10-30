@@ -34,5 +34,15 @@ and for production build use
 
  ### Added numerical pagination support with 2 next and previous links 
   
+## Developers Guide
+
+Clone the repository `$ git clone https://github.com/narainsagar/ngx-data-table.git`
+
+```
+$ cd ngx-data-table
+$ npm i
+$ npm run build
+```
+
 #### Licensing
 MIT License
