@@ -4,7 +4,7 @@ export const PAGINATION_TEMPLATE = `
         {{dataTable.translations.paginationRange}}:
         <span [textContent]="dataTable.offset + 1"></span>
         -
-        <span [textContent]="[dataTable.offset + dataTable.limit , dataTable.itemCount] | min"></span>
+        <span [textContent]="[dataTable.offset + dataTable.limit, dataTable.itemCount] | min"></span>
         /
         <span [textContent]="dataTable.itemCount"></span>
     </div>
@@ -17,7 +17,7 @@ export const PAGINATION_TEMPLATE = `
                        (keyup.enter)="limit = limitInput.value" (keyup.esc)="limitInput.value = limit"/>
             </div>
         </div>
-        <div class=" pagination-pages"  *ngIf="maxPage > 1">
+        <div class="pagination-pages"  *ngIf="maxPage > 1">
             <button [disabled]="dataTable.offset <= 0" (click)="pageFirst()" class="btn btn-default pagination-firstpage">&laquo;</button>
             <button [disabled]="dataTable.offset <= 0" (click)="pageBack()" class="btn btn-default pagination-prevpage">&lsaquo;</button>
             <div class="pagination-page" *ngIf="show_input">

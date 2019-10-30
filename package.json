@@ -1,6 +1,6 @@
 {
   "name": "ngx-data-table",
-  "version": "0.4.6",
+  "version": "1.0.0",
   "description": "An Angular v2+ data table, with pagination, sorting, expandable rows etc.",
   "keywords": [
     "ngx",
@@ -15,17 +15,25 @@
     "data table",
     "pagination"
   ],
-  "main": "src/index.ts",
-  "typings": "src/index.ts",
-  "scripts": {
-    "build": "tsc"
-  },
+  "license": "MIT",
+  "homepage": "https://github.com/narainsagar/ngx-data-table#readme",
+  "author": "Narain Sagar <narainmenghwar@gmail.com> (http://narainsagar.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/narainsagar/ngx-data-table.git"
   },
-  "author": "Dmitrii Bilukha <siniidrozd@gmail.com> (http://donsamogon.com)",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/narainsagar/ngx-data-table/issues"
+  },
+  "private": false,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "serve": "npm run clean && tsc -w",
+    "packagr": "ng-packagr -p ng-package.json"
+  },
   "dependencies": {
     "@angular/core": "~8.2.9",
     "@angular/common": "~8.2.9",
@@ -35,13 +43,11 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@angular/compiler": "~8.2.9",
+    "@angular/compiler-cli": "~8.2.9",
     "@types/node": "~8.9.4",
+    "ng-packagr": "^5.7.1",
     "ts-node": "~7.0.0",
     "typescript": "~3.5.3"
-  },
-  "false": {},
-  "bugs": {
-    "url": "https://github.com/narainsagar/ngx-data-table/issues"
-  },
-  "homepage": "https://github.com/narainsagar/ngx-data-table#readme"
+  }
 }

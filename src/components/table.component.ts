@@ -37,7 +37,7 @@ export class DataTable implements DataTableParams, OnInit {
 
 	@ContentChildren(DataTableColumn) columns: QueryList<DataTableColumn>;
 	@ViewChildren(DataTableRow) rows: QueryList<DataTableRow>;
-	@ContentChild('dataTableExpand', { static: false }) expandTemplate: TemplateRef<any>;
+	@ContentChild('dataTableExpand', { static: true }) expandTemplate: TemplateRef<any>;
 
 	// One-time optional bindings with default values:
 
@@ -227,7 +227,7 @@ export class DataTable implements DataTableParams, OnInit {
 		this.rowDoubleClick.emit({ row, event });
 	}
 
-	private headerClicked(column: DataTableColumn, event: Event) {
+	public headerClicked(column: DataTableColumn, event: Event) {
 		if (!this._resizeInProgress) {
 			event.preventDefault();
 			event.stopPropagation();
@@ -339,7 +339,7 @@ export class DataTable implements DataTableParams, OnInit {
 
 	private _resizeInProgress = false;
 
-	private resizeColumnStart(event: MouseEvent, column: DataTableColumn, columnElement: HTMLElement) {
+	public resizeColumnStart(event: MouseEvent, column: DataTableColumn, columnElement: HTMLElement) {
 		this._resizeInProgress = true;
 
 		drag(event, {

@@ -1,11 +1,11 @@
-import {Component, Inject, forwardRef, Input} from '@angular/core';
-import {DataTable} from './table.component';
-import {PAGINATION_TEMPLATE} from './pagination.template';
-import {PAGINATION_STYLE} from "./pagination.style";
+import { Component, Inject, forwardRef, Input } from '@angular/core';
+import { DataTable } from './table.component';
+import { PAGINATION_TEMPLATE } from './pagination.template';
+import { PAGINATION_STYLE } from "./pagination.style";
 
 
 @Component({
-    moduleId: module.id +'',
+    moduleId: module.id + '',
     selector: 'data-table-pagination',
     template: PAGINATION_TEMPLATE,
     styles: [PAGINATION_STYLE]
@@ -70,7 +70,7 @@ export class DataTablePagination {
             } else if (page > 2 && maxPage > page) {
                 minPage = page - 1;
                 maxPage = page + 1;
-            } else  if (page > 2 && maxPage === page) {
+            } else if (page > 2 && maxPage === page) {
                 minPage = page - 2;
                 maxPage = page;
             }

@@ -20,8 +20,8 @@ export class DataTableColumn implements OnInit {
     @Input() width: number | string;
     @Input() visible = true;
 
-    @ContentChild('dataTableCell', { static: false }) cellTemplate;
-    @ContentChild('dataTableHeader', { static: false }) headerTemplate;
+    @ContentChild('dataTableCell', { static: true }) cellTemplate;
+    @ContentChild('dataTableHeader', { static: true }) headerTemplate;
 
     getCellColor(row: DataTableRow, index: number) {
         if (this.cellColors !== undefined) {
@@ -29,7 +29,7 @@ export class DataTableColumn implements OnInit {
         }
     }
 
-    private styleClassObject = {}; // for [ngClass]
+    public styleClassObject = {}; // for [ngClass]
 
     ngOnInit() {
         this._initCellClass();

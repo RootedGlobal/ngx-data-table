@@ -1,5 +1,7 @@
 
+*.tgz
 /tmp
 /node_modules
 /.idea
 /typings
+/src
