@@ -30,9 +30,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
-    "serve": "npm run clean && tsc -w",
-    "packagr": "ng-packagr -p ng-package.json"
+    "build": "npm run clean && tsc"
   },
   "dependencies": {
     "@angular/core": "~8.2.9",
