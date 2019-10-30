@@ -20,13 +20,13 @@ Check out the [demo](https://ggmod.github.io/angular-2-data-table-demo) and its 
 Demo for pagination with seperate page numbers will be added soon
 
 ## Installing:
-`npm install ngx-data-table --save`
+`npm install @rootedglobal/ngx-data-table --save`
 
 ## Production (Minification)
 Some times this can cause problems.  
 To fix it use import like this
 
-`import { DataTableModule } from 'ngx-data-table';`
+`import { DataTableModule } from '@rootedglobal/ngx-data-table';`
 
 and for production build use
 
@@ -36,7 +36,7 @@ and for production build use
   
 ## Developers Guide
 
-Clone the repository `$ git clone https://github.com/narainsagar/ngx-data-table.git`
+Clone the repository `$ git clone https://github.com/rootedglobal/ngx-data-table.git`
 
 ```
 $ cd ngx-data-table

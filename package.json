@@ -1,5 +1,5 @@
 {
-  "name": "ngx-data-table",
+  "name": "@rootedglobal/ngx-data-table",
   "version": "1.0.0",
   "description": "An Angular v2+ data table, with pagination, sorting, expandable rows etc.",
   "keywords": [
@@ -16,14 +16,14 @@
     "pagination"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/narainsagar/ngx-data-table#readme",
+  "homepage": "https://github.com/rootedglobal/ngx-data-table#readme",
   "author": "Narain Sagar <narainmenghwar@gmail.com> (http://narainsagar.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/narainsagar/ngx-data-table.git"
+    "url": "git+https://github.com/rootedglobal/ngx-data-table.git"
   },
   "bugs": {
-    "url": "https://github.com/narainsagar/ngx-data-table/issues"
+    "url": "https://github.com/rootedglobal/ngx-data-table/issues"
   },
   "private": false,
   "main": "dist/index.js",
